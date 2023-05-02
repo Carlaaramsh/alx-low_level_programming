@@ -1,37 +1,25 @@
 #include "main.h"
 
 /**
-  * puts2 - Prints half of a string
-  *
-  * @str: The string to print
+  * puts2 - Prints every other character of a string
+  * @str: The string to be treated
   *
   * Return: void
   */
-puts2(char *str)
+void puts2(char *str)
 {
+	int i;
 	int j = 0;
-	int k;
 
 	while (str[j] != '\0')
 	{
 		j++;
 	}
 
-	if (j % 2 == 1)
+	for (i = 0; i < j; i += 2)
 	{
-		k = (j - 1) / 2;
-		k += 1;
-	}
-	else
-	{
-		k = j / 2;
-	}
-
-	for (; k < j; k++)
-	{
-		_putchar(*str[k]);
+		_putchar(str[i]);
 	}
 
 	_putchar('\n');
 }
-
