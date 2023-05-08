@@ -3,7 +3,7 @@
 /**
  * _memcpy - copies n bytes from src to dest
  * @dest : pointer to character
- * @rsc: pointer to other character
+ * @src: pointer to other character
  * @n: number of bytes
  * Return: pointer
  */
@@ -16,6 +16,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 	dest[x] = src[x];
 	}
-	
 	return (dest);
 }
